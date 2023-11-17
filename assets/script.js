@@ -51,6 +51,7 @@ class ValidaFormulario {
 
         for (let campo of this.formulario.querySelectorAll('.validar')) {
             const label = campo.previousElementSibling.innerText;
+            
             if (!campo.value) {
                 this.criaErro(campo, ` Campo "${label}" não pode estar vazio.`);
                 valid = false;
