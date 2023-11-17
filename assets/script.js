@@ -18,7 +18,9 @@ class ValidaFormulario {
 
         if (camposValidos && senhasValidas) {
             alert('Formulário enviado!');
-            this.formulario.submit();
+            setTimeout(function() {
+                window.location.href = 'https://lucasshira.github.io/snake-game/';
+            }, 2000);
         }
     }
 
