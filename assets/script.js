@@ -35,7 +35,7 @@ class ValidaFormulario {
         }
 
         if (senha.value.length < 6 || senha.value.length > 12) {
-            let valid = false;
+            valid = false;
             this.criaErro(senha, 'Senha precisa ter entre 6 e 12 caracteres.');
         }
 
@@ -51,9 +51,9 @@ class ValidaFormulario {
 
         for (let campo of this.formulario.querySelectorAll('.validar')) {
             const label = campo.previousElementSibling.innerText;
-            
+
             if (!campo.value) {
-                this.criaErro(campo, ` Campo "${label}" não pode estar vazio.`);
+                this.criaErro(campo, `Campo "${label}" não pode estar vazio.`);
                 valid = false;
             }
 
